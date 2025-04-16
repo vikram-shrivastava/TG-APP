@@ -29,6 +29,10 @@ function Navbar() {
     // Redirect to home or login
     navigate("/");
   };
+  const handleStudentform = () => {
+    navigate("/studentform");
+  }
+
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
@@ -42,10 +46,10 @@ function Navbar() {
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex gap-6">
-              <Link to="/dashboard" className="text-gray-600 hover:text-blue-500 font-medium transition-colors">Dashboard</Link>
+              <Link to="/dashboard" className="text-gray-600 hover:text-blue-500 font-medium transition-colors"onClick={handleDashboard}>Dashboard</Link>
               <Link to="/#features" className="text-gray-600 hover:text-blue-500 font-medium transition-colors">Features</Link>
               <Link to="/#contact" className="text-gray-600 hover:text-blue-500 font-medium transition-colors">Contact</Link>
-              <Link to="/studentform" className="text-gray-600 hover:text-blue-500 font-medium transition-colors">StudentForm</Link>
+              <Link to="/studentform" className="text-gray-600 hover:text-blue-500 font-medium transition-colors"onClick={handleStudentform}>StudentForm</Link>
             </div>
             {!isAuthenticated &&
             <div className="hidden md:flex gap-4">
@@ -71,10 +75,10 @@ function Navbar() {
           {isMenuOpen && (
             <div className="md:hidden py-4 border-t mt-4">
               <div className="flex flex-col gap-4">
-              <Link to="/dashboard" className="text-gray-600 hover:text-blue-500 font-medium transition-colors">Dashboard</Link>
+              <Link to="/dashboard" className="text-gray-600 hover:text-blue-500 font-medium transition-colors" onClick={handleDashboard}>Dashboard</Link>
               <Link to="/#features" className="text-gray-600 hover:text-blue-500 font-medium transition-colors">Features</Link>
               <Link to="/#contact" className="text-gray-600 hover:text-blue-500 font-medium transition-colors">Contact</Link>
-              <Link to="/studentform" className="text-gray-600 hover:text-blue-500 font-medium transition-colors">Student Form</Link>
+              <Link to="/studentform" className="text-gray-600 hover:text-blue-500 font-medium transition-colors" onClick={handleStudentform}>Student Form</Link>
                 <div className="flex gap-4 mt-2">
                   <button className="px-4 py-2 border border-blue-500 text-blue-500 font-medium rounded hover:bg-blue-500 hover:text-white transition-colors">Login</button>
                   <button className="px-4 py-2 bg-blue-500 text-white font-medium rounded hover:bg-blue-600 transition-colors">Sign Up</button>
