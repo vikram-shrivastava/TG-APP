@@ -8,7 +8,7 @@ import LoginPage from './components/login.jsx';
 import SignupPage from './components/signup.jsx';
 import TeacherDashboard from './components/TeacherDashboard.jsx';
 import StudentTGForm from './components/StudentTGForm.jsx';
-import Navbar from './components/navbar.jsx';
+import Navbar from './components/Navbar.jsx';
 
 import { AuthProvider, useAuth, ProtectedRoute } from './components/AuthContext.jsx';
 
