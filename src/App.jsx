@@ -48,7 +48,7 @@ export default function App() {
               </div>
             </div>
             <div className="md:w-1/2 flex justify-center">
-              <img src="src\assets\TgDashboard.jpeg" alt="TG App Dashboard Preview" className="rounded-lg shadow-lg" />
+              <img src="https://res.cloudinary.com/dcc5th5so/image/upload/v1744828236/x2i5qh9dhdnuvog1boau.jpg" alt="TG App Dashboard Preview" className="rounded-lg shadow-lg" />
             </div>
           </div>
         </div>
