@@ -42,10 +42,10 @@ function Navbar() {
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex gap-6">
-              <a href="/dashboard" className="text-gray-600 hover:text-blue-500 font-medium transition-colors">Dashboard</a>
-              <a href="/#features" className="text-gray-600 hover:text-blue-500 font-medium transition-colors">Features</a>
-              <a href="/#contact" className="text-gray-600 hover:text-blue-500 font-medium transition-colors">Contact</a>
-              <a href="/studentform" className="text-gray-600 hover:text-blue-500 font-medium transition-colors">StudentForm</a>
+              <Link to="/dashboard" className="text-gray-600 hover:text-blue-500 font-medium transition-colors">Dashboard</Link>
+              <Link to="/#features" className="text-gray-600 hover:text-blue-500 font-medium transition-colors">Features</Link>
+              <Link to="/#contact" className="text-gray-600 hover:text-blue-500 font-medium transition-colors">Contact</Link>
+              <Link to="/studentform" className="text-gray-600 hover:text-blue-500 font-medium transition-colors">StudentForm</Link>
             </div>
             {!isAuthenticated &&
             <div className="hidden md:flex gap-4">
@@ -71,10 +71,10 @@ function Navbar() {
           {isMenuOpen && (
             <div className="md:hidden py-4 border-t mt-4">
               <div className="flex flex-col gap-4">
-              <a href="/dashboard" className="text-gray-600 hover:text-blue-500 font-medium transition-colors">Dashboard</a>
-              <a href="/#features" className="text-gray-600 hover:text-blue-500 font-medium transition-colors">Features</a>
-              <a href="/#contact" className="text-gray-600 hover:text-blue-500 font-medium transition-colors">Contact</a>
-              <a href="/studentform" className="text-gray-600 hover:text-blue-500 font-medium transition-colors">Student Form</a>
+              <Link to="/dashboard" className="text-gray-600 hover:text-blue-500 font-medium transition-colors">Dashboard</Link>
+              <Link to="/#features" className="text-gray-600 hover:text-blue-500 font-medium transition-colors">Features</Link>
+              <Link to="/#contact" className="text-gray-600 hover:text-blue-500 font-medium transition-colors">Contact</Link>
+              <Link to="/studentform" className="text-gray-600 hover:text-blue-500 font-medium transition-colors">Student Form</Link>
                 <div className="flex gap-4 mt-2">
                   <button className="px-4 py-2 border border-blue-500 text-blue-500 font-medium rounded hover:bg-blue-500 hover:text-white transition-colors">Login</button>
                   <button className="px-4 py-2 bg-blue-500 text-white font-medium rounded hover:bg-blue-600 transition-colors">Sign Up</button>
